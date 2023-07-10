@@ -1,0 +1,28 @@
+[
+    {
+        "title": "asd",
+        "description": "dsa",
+        "price": "14.23",
+        "thumbnail": "ert",
+        "code": "qwa",
+        "stock": "12",
+        "id": "1"},
+    {
+        "title": "asd2",
+        "description": "dsa2",
+        "price": "14.23",
+        "thumbnail": "ert2",
+        "code": "qwa2",
+        "stock": "18",
+        "id": "2"
+    },
+    {
+        "title": "asd3",
+        "description": "dsa3",
+        "price": "14.23",
+        "thumbnail": "ert3",
+        "code": "qwa3",
+        "stock": "15",
+        "id": "3"
+    }
+]
