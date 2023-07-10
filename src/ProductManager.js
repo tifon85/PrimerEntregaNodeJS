@@ -1,35 +1,15 @@
 import fs from 'fs'
 
-class ProductManager{
+export class ProductManager{
     constructor(ruta){
         this.path=ruta
     }
 
-    addProduct = async (title, description, price, thumbnail, code, stock) => {
-        //VALIDACIONES
-		if (
-		  !title ||
-		  !description ||
-		  !price ||
-		  !thumbnail ||
-		  !code ||
-		  !stock
-		) {
-		  return console.log("Error: Todos los campos son obligatorios.");
-		}
-		//VALIDACIONES
+    addProduct = async (producto) => {
         let productos = await this.getProducts()
-        let yaEsta = productos.find(item => item.code == code)
+        let yaEsta = productos.find(item => item.code == producto.code)
         try{
             if(!yaEsta){
-                const producto = {
-                    title,
-                    description,
-                    price,
-                    thumbnail,
-                    code,
-                    stock
-                }
                 if(productos.length == 0){ 
                     producto.id=1
                 }else{
@@ -105,8 +85,6 @@ class ProductManager{
     }
 
 }
-
-export default ProductManager
 
 //const products = new ProductManager('./Productos.json')
 //products.addProduct('asd', 'dsa', '14.23', 'ert', 'qwa', 12).then(resp => console.log(resp))
