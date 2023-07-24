@@ -1,0 +1,24 @@
+[
+	{
+		"title": "pepe",
+		"description": "argento",
+		"price": "154,2",
+		"code": "arg",
+		"stock": "27",
+		"category": "2",
+		"status": true,
+		"thumbnail": [],
+		"id": 2
+	},
+	{
+		"title": "asd6",
+		"description": "asd6",
+		"price": "14,2",
+		"code": "asd6",
+		"stock": "34",
+		"category": "1",
+		"status": true,
+		"thumbnail": [],
+		"id": 3
+	}
+]
